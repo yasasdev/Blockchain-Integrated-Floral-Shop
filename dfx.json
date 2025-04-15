@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "final-project-flowershop-backend": {
+      "main": "src/final-project-flowershop-backend/main.mo",
+      "type": "motoko"
+    },
+    "final-project-flowershop-frontend": {
+      "dependencies": [
+        "final-project-flowershop-backend"
+      ],
+      "source": [
+        "src/final-project-flowershop-frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "final-project-flowershop-frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
